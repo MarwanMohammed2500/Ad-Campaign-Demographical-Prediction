@@ -128,8 +128,7 @@ This was a way for me to bridge my ML and DevOps experiences. I'm still explorin
 ---
 # Screenshots from within the app
 ### When you open the app
-![image](https://github.com/user-attachments/assets/8efb9543-4b46-4ede-9ad0-88cead132c98)
+![image](https://github.com/user-attachments/assets/b5454122-dc8b-4c3b-9917-d7ce360afd6c)
 
 ### Sample Prediction
-![image](https://github.com/user-attachments/assets/637adb61-1a6c-4699-8bd5-b854db057a0f)
-
+![image](https://github.com/user-attachments/assets/c10b1d69-4b93-41d1-9502-cd467ebd10cc)
