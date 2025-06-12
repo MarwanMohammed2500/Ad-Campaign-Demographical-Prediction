@@ -1,0 +1,6 @@
+node_modules
+.git
+dist
+social_media_adv.ipynb
+Social_Network_Ads.csv
+*.log

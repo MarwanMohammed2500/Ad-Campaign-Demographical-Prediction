@@ -1,0 +1,23 @@
+services:
+  django:
+    build:
+      context: ..
+      dockerfile: Docker/Django-Dockerfile
+    ports:
+      - 8000:8000
+    networks:
+       app:
+  
+  node:
+    build:
+      context: ..
+      dockerfile: Docker/Dockerfile
+    ports:
+      - 5000:5000
+    networks:
+      app:
+    
+
+networks:
+  app:
+    driver: bridge

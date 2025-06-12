@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4.9%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4.9%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 47%, 11%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222, 47%, 11%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(222, 84%, 4.9%);
+  --radius: 0.75rem;
+  
+  /* Custom colors to match design */
+  --slate-50: hsl(210, 40%, 98%);
+  --slate-100: hsl(210, 40%, 96%);
+  --slate-200: hsl(214, 32%, 91%);
+  --slate-300: hsl(213, 27%, 84%);
+  --slate-400: hsl(215, 20%, 65%);
+  --slate-500: hsl(215, 16%, 47%);
+  --slate-600: hsl(215, 19%, 35%);
+  --slate-700: hsl(215, 25%, 27%);
+  --slate-800: hsl(217, 33%, 17%);
+  --slate-900: hsl(222, 47%, 11%);
+  
+  --blue-50: hsl(214, 100%, 97%);
+  --blue-100: hsl(214, 95%, 93%);
+  --blue-500: hsl(217, 91%, 60%);
+  --blue-600: hsl(221, 83%, 53%);
+  
+  --green-50: hsl(138, 76%, 97%);
+  --green-500: hsl(142, 71%, 45%);
+  --green-800: hsl(158, 64%, 22%);
+  
+  --red-50: hsl(0, 86%, 97%);
+  --red-500: hsl(0, 84%, 60%);
+  
+  --emerald-50: hsl(151, 81%, 96%);
+  --emerald-200: hsl(152, 57%, 82%);
+  --emerald-500: hsl(160, 84%, 39%);
+  --emerald-800: hsl(158, 64%, 22%);
+  
+  --purple-50: hsl(270, 100%, 98%);
+  --purple-200: hsl(269, 100%, 92%);
+  --purple-500: hsl(271, 81%, 56%);
+  --purple-800: hsl(272, 50%, 36%);
+  
+  --yellow-500: hsl(48, 96%, 53%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 4.9%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 47%, 11%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(217, 91%, 60%);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes for the financial predictor */
+.text-slate-50 { color: hsl(var(--slate-50)); }
+.text-slate-100 { color: hsl(var(--slate-100)); }
+.text-slate-400 { color: hsl(var(--slate-400)); }
+.text-slate-500 { color: hsl(var(--slate-500)); }
+.text-slate-600 { color: hsl(var(--slate-600)); }
+.text-slate-700 { color: hsl(var(--slate-700)); }
+.text-slate-900 { color: hsl(var(--slate-900)); }
+
+.bg-slate-50 { background-color: hsl(var(--slate-50)); }
+.bg-slate-100 { background-color: hsl(var(--slate-100)); }
+
+.border-slate-200 { border-color: hsl(var(--slate-200)); }
+.border-slate-300 { border-color: hsl(var(--slate-300)); }
+
+.bg-blue-50 { background-color: hsl(var(--blue-50)); }
+.bg-blue-100 { background-color: hsl(var(--blue-100)); }
+.bg-blue-500 { background-color: hsl(var(--blue-500)); }
+.hover\:bg-blue-600:hover { background-color: hsl(var(--blue-600)); }
+.text-blue-500 { color: hsl(var(--blue-500)); }
+.text-blue-700 { color: hsl(221, 39%, 11%); }
+.text-blue-800 { color: hsl(222, 47%, 11%); }
+.text-blue-900 { color: hsl(222, 84%, 4.9%); }
+
+.bg-green-50 { background-color: hsl(var(--green-50)); }
+.text-green-500 { color: hsl(var(--green-500)); }
+.text-green-700 { color: hsl(158, 64%, 22%); }
+.text-green-800 { color: hsl(var(--green-800)); }
+.text-green-900 { color: hsl(158, 64%, 12%); }
+
+.bg-red-50 { background-color: hsl(var(--red-50)); }
+.text-red-500 { color: hsl(var(--red-500)); }
+
+.bg-emerald-50 { background-color: hsl(var(--emerald-50)); }
+.border-emerald-200 { border-color: hsl(var(--emerald-200)); }
+.text-emerald-500 { color: hsl(var(--emerald-500)); }
+.text-emerald-800 { color: hsl(var(--emerald-800)); }
+
+.bg-purple-50 { background-color: hsl(var(--purple-50)); }
+.border-purple-200 { border-color: hsl(var(--purple-200)); }
+.text-purple-500 { color: hsl(var(--purple-500)); }
+.text-purple-700 { color: hsl(272, 50%, 26%); }
+.text-purple-800 { color: hsl(var(--purple-800)); }
+.text-purple-900 { color: hsl(272, 50%, 16%); }
+
+.text-yellow-500 { color: hsl(var(--yellow-500)); }
+
+/* Gradient backgrounds */
+.from-blue-50 { --tw-gradient-from: hsl(var(--blue-50)); }
+.to-indigo-50 { --tw-gradient-to: hsl(225, 100%, 98%); }
+.border-blue-200 { border-color: hsl(213, 94%, 88%); }
+
+.from-green-50 { --tw-gradient-from: hsl(var(--green-50)); }
+.to-emerald-50 { --tw-gradient-to: hsl(var(--emerald-50)); }
+.border-green-200 { border-color: hsl(141, 79%, 85%); }
+
+.from-purple-50 { --tw-gradient-from: hsl(var(--purple-50)); }
+.to-violet-50 { --tw-gradient-to: hsl(270, 100%, 98%); }
