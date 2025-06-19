@@ -4,6 +4,11 @@ This is the backend for a machine learning-powered API that predicts whether a u
 
 ---
 
+## Business Value
+While this specific project was made on a random dataset I found on kaggle, it can be expanded to match a business's specific needs based on their past responses to their marketing campaigns, highlighting different age groups' and social groups'responses to your advertisements and products
+
+---
+
 ## 📁 Project Structure
 ```
 ├── Docker/
